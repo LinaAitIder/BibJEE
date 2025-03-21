@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+    <title>Add User</title>
+</head>
+<body>
+<h1>Add User</h1>
+<h:form>
+    <h:outputLabel for="name" value="Name:" />
+    <h:inputText id="name" value="#{userController.user.name}" required="true" />
+    <br/>
+
+    <h:outputLabel for="mail" value="Email:" />
+    <h:inputText id="mail" value="#{userController.user.mail}" required="true" />
+    <br/>
+
+    <h:commandButton value="Add/Update User" action="#{userController.addUpdateUser}" />
+</h:form>
+
+
+
+</body>
+</html>
