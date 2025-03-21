@@ -10,7 +10,7 @@ import java.util.List;
 public class DocumentDAO {
 
     public List<Document> getAllDocuments(){
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("DocumentPU");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("bibPu");
         EntityManager em = emf.createEntityManager();
         Query query = em.createQuery("SELECT d FROM Document d");
         return query.getResultList();

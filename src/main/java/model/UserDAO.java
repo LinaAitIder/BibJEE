@@ -15,7 +15,7 @@ public class UserDAO {
 
     // Constructor initializes the EntityManager
     public UserDAO() {
-        emf = Persistence.createEntityManagerFactory("userPU"); // "userPU" is the persistence unit name
+        emf = Persistence.createEntityManagerFactory("bibPu"); // "userPU" is the persistence unit name
         em = emf.createEntityManager();
     }
 

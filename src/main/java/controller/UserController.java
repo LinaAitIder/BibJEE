@@ -11,14 +11,12 @@ import java.io.Serializable;
 @SessionScoped
 public class UserController implements Serializable {
 
-    private User user; // User object to be used for form binding
+    private User user;
 
-    // Inject the UserDAO to interact with the database
     private UserDAO userDAO;
 
-    // Constructor
     public UserController() {
-        user = new User(); // Initialize the user object
+        user = new User();
         userDAO = new UserDAO(); // Initialize the UserDAO
     }
 
